@@ -26,14 +26,14 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <style>
         body {
-            overflow-x: hidden; /* Mencegah scroll horizontal */
-            margin: 0; /* Pastikan tidak ada margin default dari browser */
-            box-sizing: border-box; /* Lebih rapi untuk model kotak elemen */
+            overflow-x: hidden;
+            margin: 0;
+            box-sizing: border-box;
         }
 
         img {
-            max-width: 100%; /* Membatasi lebar gambar agar sesuai container */
-            height: auto; /* Menjaga proporsi gambar */
+            max-width: 100%;
+            height: auto;
         }
 
         section {
@@ -71,20 +71,18 @@
             border: none;
             background-color: transparent;
         }
-        /* Styling untuk hasil pencarian */
         .result-box {
-            width: 100%; /* Sama dengan lebar form */
-            max-height: 200px; /* Batas tinggi container */
+            width: 100%;
+            max-height: 200px;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
-            overflow-y: auto; /* Tambahkan scroll jika konten terlalu panjang */
-            background-color: #f8f9fa; /* Background warna abu terang */
-            font-size: 14px; /* Ukuran teks */
+            overflow-y: auto;
+            background-color: #f8f9fa;
+            font-size: 14px;
             color: #333;
         }
 
-        /* Hilangkan outline pada scroll */
         .result-box::-webkit-scrollbar {
             width: 8px;
         }
@@ -271,14 +269,11 @@
         });
     </script>
     <script>
-        // Tambahkan event listener ke semua tautan navbar
         const navLinks = document.querySelectorAll('.nav-link');
     
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Hapus kelas "active" dari semua tautan
                 navLinks.forEach(nav => nav.classList.remove('active'));
-                // Tambahkan kelas "active" ke tautan yang diklik
                 link.classList.add('active');
             });
         });
@@ -286,11 +281,11 @@
     <!-- AOS Initialization -->
     <script>
         AOS.init({
-            duration: 1000, // Animation duration
-            offset: 120, // Trigger point offset
-            easing: "ease-in-out", // Smooth easing
-            once: false, // Allow repeat animation on scroll
-            mirror: true, // Animate when scrolling back
+            duration: 1000,
+            offset: 120,
+            easing: "ease-in-out",
+            once: false,
+            mirror: true,
         });
     </script>
 </body>
